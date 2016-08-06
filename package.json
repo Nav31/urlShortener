@@ -19,6 +19,9 @@
   "homepage": "https://github.com/Nav31/urlShortener#readme",
   "dependencies": {
     "angular": "^1.5.8",
-    "express": "^4.14.0"
+    "bluebird": "^3.4.1",
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8"
   }
 }
