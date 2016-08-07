@@ -6,7 +6,7 @@ module.exports = router;
 router.get('/:url', (req, res, next) => {
 	// /api/www.google.com
 	Url.findOne({url: req.params.url})
-	.then(url => {
-		url ? res.send(url) : Url.create({url: url})
-	})
+	.then(url => { return url ? url : Url.create({url: url})})
+	.then(url => res.send(url))
+	.catch(console.log.bind(console))
 })
