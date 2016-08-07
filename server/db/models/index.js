@@ -6,4 +6,10 @@ const url  = new mongoose.Schema({
 	date: { type: Date, default: Date.now }
 })
 
+url.pre('save', next => {
+
+
+	next();
+})
+
 module.exports = mongoose.model('Url', url);

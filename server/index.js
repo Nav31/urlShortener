@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
-const routes = require('./routes');
 const path = require('path');
 const startDb = require('./db');
+const routes = require('./routes');
 
 app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use(express.static(path.join(__dirname, "browser")));

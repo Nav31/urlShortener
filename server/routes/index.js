@@ -1,4 +1,12 @@
-
-
 const router = require('express').Router();
+const mongoose = require('mongoose');
+const Url = mongoose.model('Url');
 module.exports = router;
+
+router.get('/:url', (req, res, next) => {
+	// /api/www.google.com
+	Url.findOne({url: req.params.url})
+	.then(url => {
+		url ? res.send(url) : Url.create({url: url})
+	})
+})
