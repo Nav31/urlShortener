@@ -4,7 +4,9 @@ const Url = mongoose.model('Url');
 module.exports = router;
 
 router.get('/:buffr', (req, res, next) => {
+	let something;
 	Url.findOne({urlEnd: req.params.buffr})
-	.then(url  => res.send(url))
+	.then(url  => url.url)
+	.then(url => res.redirect(url))
 	.catch(console.log.bind(console));
 });
