@@ -4,15 +4,16 @@ const server = require('http').Server(app);
 const path = require('path');
 const startDb = require('./db');
 const routes = require('./routes');
+const Url = require('mongoose').model('Url');
 
 app.use(express.static(path.join(__dirname, '/../node_modules')));
 app.use(express.static(path.join(__dirname, "/../browser")));
 
 app.use('/api', routes);
 
-app.use('/', require('./routes/getUrl.js'));
+app.get('/:buffr', require('./routes/getUrl'));
 
-app.get('/*', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
+app.get('/', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
 
 const port = process.env.PORT || 1337;
 
