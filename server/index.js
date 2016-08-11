@@ -4,7 +4,6 @@ const server = require('http').Server(app);
 const path = require('path');
 const startDb = require('./db');
 const routes = require('./routes');
-const Url = require('mongoose').model('Url');
 
 app.use(express.static(path.join(__dirname, '/../node_modules')));
 app.use(express.static(path.join(__dirname, "/../browser")));
