@@ -15,7 +15,7 @@ app.controller('shortenerCtrl',function($scope, UrlFactory, $log){
 
 
 app.factory('UrlFactory', function($http) {
-	function parseData (res) return res.data;
+	function parseData (res){ return res.data};
 	return {
 		getShortUrl: function(longUrl) {
 			return $http.get('api/' + longUrl).then(parseData);
