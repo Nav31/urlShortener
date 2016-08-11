@@ -10,9 +10,9 @@ app.use(express.static(path.join(__dirname, "/../browser")));
 
 app.use('/api', routes);
 
-app.get('/:buffr', require('./routes/getUrl'));
+app.use('/', require('./routes/getUrl'));
 
-app.get('/', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
+app.get('/*', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
 
 const port = process.env.PORT || 1337;
 
