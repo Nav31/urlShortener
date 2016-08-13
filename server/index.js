@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "/../browser")));
 
 app.use('/api', routes);
 
-app.use('/', require('./routes/getUrl.js'));
+app.use('/', require('./routes/getUrl'));
 
 app.get('/*', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
 
