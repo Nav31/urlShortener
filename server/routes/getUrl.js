@@ -5,8 +5,6 @@ module.exports = router;
 
 router.get('/:buffr', (req, res, next) => {
 	Url.findOne({urlEnd: req.params.buffr})
-	.then(url  => {
-		res.redirect(url.url);
-	})
+	.then(url  => res.redirect(url.url))
 	.catch(console.log.bind(console));
 });
