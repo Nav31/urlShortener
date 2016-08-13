@@ -10,7 +10,7 @@
 		<div ng-controller="shortenerCtrl">
 			<input ng-model="inputUrl"/>
 			<button ng-click='getShortUrl()'>shorten</button>
-			<a ng-show="shortUrl">{{shortUrl}}</a>
+			<a ng-show="shortUrl" ng-href="{{shortUrl}}">{{shortUrl}}</a>
 		</div>
 
 	</body>
