@@ -7,6 +7,14 @@ const url  = new mongoose.Schema({
 	date: { type: Date, default: Date.now }
 });
 
-// Build pre-hook that attaches the http or www to the url in case they are missing;
+url.pre("save", function(next) {
+	const httpStr = 'http://';
+	const www = 'www.';
+	const httpReg = /^https?:\/\/www\./;
+	const wwwReg = new RegExp(www);
+	if(!httpReg.test(this.url) && wwwReg.test(this.url)) this.url = httpStr + this.url;
+	else if(!httpReg.test(this.url) && !wwwReg.test(this.url)) this.url = httpStr + www + this.url;
+	next();
+})
 
 module.exports = mongoose.model('Url', url);
