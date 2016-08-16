@@ -3,6 +3,7 @@
 var app = angular.module('urlShortener', []);
 
 app.controller('shortenerCtrl',function($scope, UrlFactory, $log){
+	var clipboard = new Clipboard('.btn');
 	$scope.shortUrl = null;
 	$scope.getShortUrl = function(){	
 		UrlFactory.getShortUrl($scope.inputUrl)
