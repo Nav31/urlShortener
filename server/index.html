@@ -13,6 +13,10 @@
 			<button ng-click='getShortUrl()'>shorten</button>
 			<input id="shortUrl" ng-show="shortUrl" ng-href="{{shortUrl}}" value='{{shortUrl}}'></input>
 			<button ng-show="shortUrl" class="btn" data-clipboard-target="#shortUrl">copy</button>
+			<p ng-show="shortUrl">Click Count: {{clickCount}}</p>
+			
+		</div>
+		<div>
 		</div>
 	</body>
 </html>
