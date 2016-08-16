@@ -4,7 +4,8 @@ const crypto = require('crypto');
 const url  = new mongoose.Schema({ 
 	url : {type: String, required: true},
 	urlEnd: {type: String, required: true},
-	date: { type: Date, default: Date.now }
+	dateCreated: { type: Date, default: Date.now },
+	whenClicked: {type: Array, default: []}
 });
 
 url.pre("save", function(next) {

@@ -5,6 +5,13 @@ module.exports = router;
 
 router.get('/:buffr', (req, res, next) => {
 	Url.findOne({urlEnd: req.params.buffr})
-	.then(url  => res.redirect(url.url))
+	.then(url => {
+		url.whenClicked.push(Date.now());
+		return url.save();
+	})
+	.then(url  => {
+		console.log('saved: ',url.whenClicked)
+		res.redirect(url.url)
+	})
 	.catch(console.log.bind(console));
 });
