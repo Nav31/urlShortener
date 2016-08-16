@@ -6,11 +6,32 @@
 		<script src="/clipboard/dist/clipboard.min.js"></script>
 		<script src="/app.js"></script>
 		<link href="/css/stylesheet.css" rel='stylesheet'>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body ng-app="urlShortener">
-		<div ng-controller="shortenerCtrl">
-			<input ng-model="inputUrl"/>
-			<button ng-click='getShortUrl()'>shorten</button>
+	  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      	<script type="text/javascript" src="materialize-css/dist/js/materialize.min.js"></script>
+		<div ng-controller="shortenerCtrl" class="row">
+			<form class="col s12">
+				<div class="row">
+					<div class="input-feild col s12">
+						<textarea name="textarea1" class="materialize-textarea" ng-model="inputUrl"></textarea>
+						<label for='textarea1'>URL</label>
+						<button class='btn waves-effect waves-light' ng-click='getShortUrl()'>Shorten
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+
+<!-- 					<div class="input-field col s12">
+          				<textarea id="textarea1" class="materialize-textarea" ng-show="shortUrl" ng-href="{{shortUrl}}" value='{{shortUrl}}'></textarea>
+          				<label for="textarea1">Short Url</label>
+        			</div> -->
+				</div>
+			</form>
+			<!-- <input ng-model="inputUrl"/> -->
+			<!-- <button ng-click='getShortUrl()'>shorten</button> -->
 			<input id="shortUrl" ng-show="shortUrl" ng-href="{{shortUrl}}" value='{{shortUrl}}'></input>
 			<button ng-show="shortUrl" class="btn" data-clipboard-target="#shortUrl">copy</button>
 			<p ng-show="shortUrl">Click Count: {{clickCount}}</p>
