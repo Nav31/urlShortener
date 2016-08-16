@@ -9,9 +9,6 @@ router.get('/:buffr', (req, res, next) => {
 		url.whenClicked.push(Date.now());
 		return url.save();
 	})
-	.then(url  => {
-		console.log('saved: ',url.whenClicked)
-		res.redirect(url.url)
-	})
+	.then(url  => res.redirect(url.url))
 	.catch(console.log.bind(console));
 });
