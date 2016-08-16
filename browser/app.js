@@ -9,6 +9,7 @@ app.controller('shortenerCtrl',function($scope, UrlFactory, $log){
 		UrlFactory.getShortUrl($scope.inputUrl)
 		.then(function(shortUrl){
 			$scope.clickCount = shortUrl.whenClicked.length;
+			$scope.lastClicked = shortUrl.whenClicked[shortUrl.whenClicked.length - 1];
 			$scope.shortUrl = 'localhost:1337/' + shortUrl.urlEnd;
 		})
 		.catch($log);

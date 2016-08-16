@@ -6,7 +6,8 @@ module.exports = router;
 router.get('/:buffr', (req, res, next) => {
 	Url.findOne({urlEnd: req.params.buffr})
 	.then(url => {
-		url.whenClicked.push(Date.now());
+		let now = new Date();
+		url.whenClicked.push(now.toString());
 		return url.save();
 	})
 	.then(url  => res.redirect(url.url))
