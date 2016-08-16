@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const url  = new mongoose.Schema({ 
 	url : {type: String, required: true},
 	urlEnd: {type: String, required: true},
