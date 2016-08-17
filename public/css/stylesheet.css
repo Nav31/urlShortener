@@ -9,7 +9,7 @@
 
 .hero {
 	background-color: #90a4ae;
-	height: 45vh;
+	height: 40vh;
 	color: white;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
@@ -26,6 +26,7 @@
 	background-color: #78909c;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
+	color:white;
 }
 
 footer {
@@ -38,4 +39,28 @@ footer {
     color: white;
 	font-family: 'Roboto Mono', monospace;
 }
+
+h6 {
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	padding-top: 1.5em;
+}
+
+.outer-div-top {
+	padding-top: 70px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.outer-div-bottom {
+	padding-top: 40px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.inputArea {
+	padding: 100px;
+}
+
+
 
