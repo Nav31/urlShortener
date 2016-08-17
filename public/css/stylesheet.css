@@ -1,0 +1,41 @@
+
+
+.navBar {
+	background-color: #b0bec5;
+	font-size: 3.0em;
+	font-weight: bold;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.hero {
+	background-color: #90a4ae;
+	height: 45vh;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.label {
+	text-align: center;
+	font-size: 2.0em;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.villain {
+	background-color: #78909c;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+
+footer {
+    background:#607d8b;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height:4vh;
+    color: white;
+	font-family: 'Roboto Mono', monospace;
+}
+
