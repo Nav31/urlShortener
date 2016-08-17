@@ -7,7 +7,7 @@
 }
 .hero {
 	background-color: #526c7a;
-	height: 48vh;
+	height: 40vh;
 	color: white;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
@@ -43,7 +43,7 @@ footer {
 	font-size: 0.8em;
 }
 .outer-div-top {
-	padding-top: 15vh;
+	padding-top: 10vh;
 	padding-left: 15vw;
 	padding-right: 15vw;
 }
