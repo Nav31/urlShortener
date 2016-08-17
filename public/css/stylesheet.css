@@ -5,8 +5,8 @@
 	font-family: 'Roboto Mono', monospace;
 }
 .hero {
-	background-color: #90a4ae;
-	height: 40vh;
+	background-color: #526c7a;
+	height: 48vh;
 	color: white;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
@@ -18,51 +18,64 @@
 	font-family: 'Roboto Mono', monospace;
 }
 .villain {
-	background-color: #78909c;
+	background-color: #3d515c;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
 	color:white;
 }
 footer {
-    background:#546F7F;
+    background:#454e54;
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height:4vh;
-    color: white;
+    color: #999999;
 	font-family: 'Roboto Mono', monospace;
 }
-h6 {
+#infos {
+	margin-top: 4vh;
 	color: white;
+    opacity: .3; 
 	font-family: 'Roboto Mono', monospace;
 	padding-top: 1.5em;
+	font-size: 0.8em;
 }
 .outer-div-top {
-	padding-top: 70px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-top: 15vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
 }
 .outer-div-bottom {
-	padding-top: 20px;
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-top: 5vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
 }
 div input.inputArea {
 	margin: 30px auto; 
+	/*width: 40vw;*/
 }
+
+/*#shortUrl {
+	width: 50vw;
+}*/
+
 input {
 	text-align: center;
 }
 input::-webkit-input-placeholder {
    color: white;
+   opacity: .15;
 }
 input:-moz-placeholder { /* Firefox 18- */
-   color: white;  
+   color: white;
+   opacity: .15;  
 }
 input::-moz-placeholder {  /* Firefox 19+ */
-   color: white;  
+   color: white;
+   opacity: .15;  
 }
 input:-ms-input-placeholder {  
-   color: white;  
+   color: white;
+   opacity: .15;  
 }

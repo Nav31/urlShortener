@@ -26,24 +26,23 @@
 					<div class='outer-div-top'>
 						<div class="inner-div">
 							<!-- <label for='textarea1' class='label'>Shrink a Link by Pasting</label> -->
-							<input name="textarea1" class="inputArea materialize-textarea" ng-model="inputUrl" placeholder="Enter a URL here"></input>
-							<button class='btn waves-effect waves-light btn-large' ng-click='getShortUrl()'>Shorten Me
+							<input name="textarea1" class="inputArea" ng-model="inputUrl" placeholder="Enter a URL here" autocomplete="off"></input>
+							<button class='btn waves-effect waves-light' ng-click='getShortUrl()'>Shorten
 								<i class="material-icons right">send</i>
 							</button>
 						</div>
 					</div>
 				</div>
 			</form>
-				<div class="row col s12">
+				<div class="row col s6">
 					<div class="outer-div-bottom">
 						<div>
 							<!-- <label for='shortUrlArea' ng-show="shortUrl" class='label'>Shortened Url</label> -->
 							<input id="shortUrl" name='shortUrlArea' class='inputArea' ng-show="shortUrl" ng-href="{{shortUrl}}" value='{{shortUrl}}'></input>
-							<button ng-show="shortUrl" class="btn waves-effect waves-light btn-large" data-clipboard-target="#shortUrl">copy
+							<button ng-show="shortUrl" class="btn waves-effect waves-light" data-clipboard-target="#shortUrl">copy
 								<i class="material-icons right">cloud</i>
 							</button>
-							<h6 ng-show="shortUrl">Click Count: {{clickCount}}</h6>
-							<h6 ng-show="shortUrl">Time Last Clicked: {{lastClicked}}</h6>
+							<div id="infos" ng-show="shortUrl">Click Count: {{clickCount}}<br>Time Last Clicked: {{lastClicked}}</div>
 						</div>
 					</div>
 				</div>
