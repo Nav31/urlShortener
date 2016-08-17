@@ -1,5 +1,5 @@
 .navBar {
-    background:#454e54;
+    background:#394146;
 	background-color: #454e54;
 	font-size: 3.0em;
 	font-weight: bold;
@@ -25,7 +25,7 @@
 	color:white;
 }
 footer {
-    background:#454e54;
+    background:#394146;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -33,6 +33,9 @@ footer {
     height:4vh;
     color: #999999;
 	font-family: 'Roboto Mono', monospace;
+	font-size: 2vh;
+	padding-top: .5vh;
+	padding-bottom: .5vh
 }
 #infos {
 	margin-top: 4vh;
@@ -43,7 +46,7 @@ footer {
 	font-size: 0.8em;
 }
 .outer-div-top {
-	padding-top: 10vh;
+	padding-top: 8vh;
 	padding-left: 15vw;
 	padding-right: 15vw;
 }
@@ -54,7 +57,7 @@ footer {
 }
 div input.inputArea {
 	margin: 30px auto; 
-	/*width: 40vw;*/
+	/*width: 50vw;*/
 }
 
 /*#shortUrl {
