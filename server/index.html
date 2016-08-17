@@ -11,12 +11,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	<!--   <nav>
+	  <nav>
 	    <div class="navBar">
-	      <a>Shorten Me</a>
+	      <a>SHORTEN ME</a>
 	      </ul>
 	    </div>
-	  </nav> -->
+	  </nav>
 	<body ng-app="urlShortener" class="villain">
 	  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script type="text/javascript" src="materialize-css/dist/js/materialize.min.js"></script>
@@ -42,7 +42,7 @@
 							<button ng-show="shortUrl" class="btn waves-effect waves-light" data-clipboard-target="#shortUrl">copy
 								<i class="material-icons right">cloud</i>
 							</button>
-							<div id="infos" ng-show="shortUrl">Click Count: {{clickCount}}<br>Time Last Clicked: {{lastClicked}}</div>
+							<div id="infos" ng-show="shortUrl">Link Accessed: {{clickCount}} Times<br>Time Last Accessed: {{lastClicked}}</div>
 						</div>
 					</div>
 				</div>
