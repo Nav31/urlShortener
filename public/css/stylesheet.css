@@ -1,0 +1,68 @@
+.navBar {
+	background-color: #546F7F;
+	font-size: 3.0em;
+	font-weight: bold;
+	font-family: 'Roboto Mono', monospace;
+}
+.hero {
+	background-color: #90a4ae;
+	height: 40vh;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+.label {
+	text-align: center;
+	font-size: 2.0em;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+}
+.villain {
+	background-color: #78909c;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	color:white;
+}
+footer {
+    background:#546F7F;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height:4vh;
+    color: white;
+	font-family: 'Roboto Mono', monospace;
+}
+h6 {
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	padding-top: 1.5em;
+}
+.outer-div-top {
+	padding-top: 70px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.outer-div-bottom {
+	padding-top: 20px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+div input.inputArea {
+	margin: 30px auto; 
+}
+input {
+	text-align: center;
+}
+input::-webkit-input-placeholder {
+   color: white;
+}
+input:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+input:-ms-input-placeholder {  
+   color: white;  
+}
