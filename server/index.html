@@ -25,8 +25,8 @@
 				<div class="row col s12 hero">
 					<div class='outer-div-top'>
 						<div class="inner-div">
-							<label for='textarea1' class='label'>Type in a URL to be shortend</label>
-							<input name="textarea1" class="materialize-textarea" ng-model="inputUrl" placeholder="Enter a URL here"></input>
+							<label for='textarea1' class='label'>Shrink a Link by Pasting</label>
+							<input name="textarea1" class="inputArea materialize-textarea" ng-model="inputUrl" placeholder="Enter a URL here"></input>
 							<button class='btn waves-effect waves-light btn-large' ng-click='getShortUrl()'>Shorten
 								<i class="material-icons right">send</i>
 							</button>
@@ -37,8 +37,8 @@
 				<div class="row col s12">
 					<div class="outer-div-bottom">
 						<div>
-							<label for='shortUrlArea' ng-show="shortUrl" class='label'>Shortend Url</label>
-							<input name='shortUrlArea' id="shortUrl" ng-show="shortUrl" ng-href="{{shortUrl}}" value='{{shortUrl}}'></input>
+							<label for='shortUrlArea' ng-show="shortUrl" class='label'>Shortened Url</label>
+							<input name='shortUrlArea' class='inputArea' ng-show="shortUrl" ng-href="{{shortUrl}}" value='{{shortUrl}}'></input>
 							<button ng-show="shortUrl" class="btn waves-effect waves-light btn-large" data-clipboard-target="#shortUrl">copy
 								<i class="material-icons right">cloud</i>
 							</button>
