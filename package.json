@@ -20,12 +20,8 @@
   "homepage": "https://github.com/Nav31/urlShortener#readme",
   "dependencies": {
     "angular": "^1.5.8",
-    "babel-cli": "^6.11.4",
-    "babel-preset-es2015": "^6.13.2",
-    "babel-runtime": "^6.11.6",
     "bluebird": "^3.4.1",
     "body-parser": "^1.15.2",
-    "bootstrap": "^4.0.0-alpha.3",
     "chalk": "^1.1.3",
     "clipboard": "^1.5.12",
     "express": "^4.14.0",
@@ -34,6 +30,11 @@
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "babel-plugin-transform-runtime": "^6.12.0"
+    "babel-cli": "^6.11.4",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-runtime": "^6.11.6",
+    "webpack": "^1.13.2"
   }
 }

@@ -8,8 +8,8 @@ const bodyParser = require('body-parser');
 const favicon = require('serve-favicon');
 
 app.use(express.static(path.join(__dirname, '/../node_modules')));
-app.use(express.static(path.join(__dirname, "/../browser")));
 app.use(express.static(path.join(__dirname, "/../public")));
+app.use(express.static(path.join(__dirname, "/../bin")));
 app.use(favicon(path.join(__dirname, "/../public/favicon.ico")));
 
 app.use(bodyParser.urlencoded({ extended: false }));
