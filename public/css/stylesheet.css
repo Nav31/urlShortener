@@ -61,7 +61,7 @@ div input.inputArea {
 }
 
 .love {
-	color: red;
+	color: 	#FFFFFF;
 	font-weight: bold;
 }
 
@@ -70,7 +70,7 @@ input {
 }
 input::-webkit-input-placeholder {
    color: white;
-   opacity: .15;
+   opacity: .40;
 }
 input:-moz-placeholder { /* Firefox 18- */
    color: white;
