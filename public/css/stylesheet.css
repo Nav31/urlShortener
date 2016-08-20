@@ -60,9 +60,10 @@ div input.inputArea {
 	/*width: 50vw;*/
 }
 
-/*#shortUrl {
-	width: 50vw;
-}*/
+.love {
+	color: red;
+	font-weight: bold;
+}
 
 input {
 	text-align: center;
