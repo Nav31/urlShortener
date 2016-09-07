@@ -13,7 +13,7 @@ app.controller('shortenerCtrl',function($scope, UrlFactory, $log){
 			if(shortUrl.whenClicked.length > 0) {
 				$scope.lastClicked = shortUrl.whenClicked[shortUrl.whenClicked.length - 1];
 			} else $scope.lastClicked = "never"
-			$scope.shortUrl = 'localhost:1337/' + shortUrl.urlEnd;
+			$scope.shortUrl = 'http://imp.nyc/' + shortUrl.urlEnd;
 		})
 		.catch($log);
 	}
