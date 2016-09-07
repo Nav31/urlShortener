@@ -20,7 +20,7 @@ app.use('/', require('./routes/getUrl'));
 
 app.get('/*', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 
 startDb.then(() => server.listen(port, () => console.log('Chillin on Port:', port)))	   
 .catch(error => console.error(error));
