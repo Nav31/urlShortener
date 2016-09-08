@@ -34,7 +34,7 @@ router.post('/', (req, res, next) => {
 function parseUrl(url) {
 	const httpStr = 'http://';
 	const www = 'www.';
-	const httpReg = /^https?:\/\/www\./;
+	const httpReg = /^https?:\/\//;
 	const wwwReg = new RegExp(www);
 	if(!httpReg.test(url) && wwwReg.test(url)) url = httpStr + url;
 	else if(!httpReg.test(url) && !wwwReg.test(url)) url = httpStr + www + url;
